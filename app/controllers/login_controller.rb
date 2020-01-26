@@ -12,7 +12,7 @@ class LoginController < ApplicationController
   end
   def verify
     puts params[:portnumber]
-    uri = URI.parse("http://127.0.0.1:10942")
+    uri = URI.parse("http://127.0.0.1:" + params[:portnumber])
     request = Net::HTTP::Post.new(uri)
     request.basic_auth(params[:Username], params[:Password])
     request.content_type = "text/plain;"

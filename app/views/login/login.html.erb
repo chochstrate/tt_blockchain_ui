@@ -1,4 +1,14 @@
-<div><%=@user_data.name%>
-<%=@user_data.password%>
-<%=@user_data.port%>
+
+<div id="header">
+<h1> Komodo on Rails Menu</h1>
+ <%= stylesheet_link_tag "style" %>
+</div>
+
+
+
+<div id = "header">
+<%=link_to "Address", address_path, class: "btn-green"%>
+<%=link_to "Blockchain", blockchain_path%>
+<%=link_to "Network", network_path%>
+<%=link_to "Wallet", wallet_path%>
 </div>
