@@ -1,5 +1,5 @@
 {
-  "name": "tt_blockchain",
+  "name": "tt_blockchain_ui",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
