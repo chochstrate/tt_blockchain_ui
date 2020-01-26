@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   get 'loginsuccess/network' => 'network#network', as: "network"
   get 'loginsuccess/wallet' => 'wallet#wallet', as: "wallet"
   get 'loginsuccess/address/addressbalance' => 'address#addressbalance', as: "addressbalance"
-  get 'loginsucess/address/snapshotwallet' => 'address#snapshotwallet', as: "snapshotwallet"
+  get 'loginsuccess/address/snapshotwallet' => 'address#snapshotwallet', as: "snapshotwallet"
+  post 'loginsuccess/address/addressbalancesuccess' => 'address#addressbalancesuccess', as: "addressbalancesuccess"
 end

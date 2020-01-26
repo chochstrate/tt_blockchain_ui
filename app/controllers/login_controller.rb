@@ -1,10 +1,9 @@
 class LoginController < ApplicationController
   def login
     if verify
-      @user_data = User.new 
-      @user_data.name = params[:Username]
-      @user_data.password = params[:Password]
-      @user_data.port = params[:portnumber]
+      session[:user_data_name] = params[:Username]
+      session[:user_data_password]= params[:Password]
+      session[:user_data_port] = params[:portnumber]
     else
       puts "error"
     end
